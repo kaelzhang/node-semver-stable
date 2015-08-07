@@ -8,7 +8,8 @@ describe("stable.is(version)", function(){
     ['1.2.3-stable', false],
     ['1.2.4-alpha', false],
     ['1.3.5', true],
-    ['0.3.9', true]
+    ['0.3.9', true],
+    ['xxyy', false]
   ].forEach(function (c) {
     var version = c[0];
     var result = c[1];
