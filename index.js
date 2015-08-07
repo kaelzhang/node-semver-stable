@@ -24,7 +24,7 @@ stable.maxSatisfying = function(versions, range) {
 
 stable.is = function(version) {
   var semver_obj = semver.parse(version);
-  return !semver_obj.prerelease.length;
+  return semver_obj === null ? false : !semver_obj.prerelease.length;
 };
 
 
